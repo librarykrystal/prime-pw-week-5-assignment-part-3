@@ -12,7 +12,16 @@ function AddToCollection(title, artist, yearPublished){
 }
 
 let indigos = new AddToCollection('Ellington Indigos', 'Duke Ellington', 1958);
-let raindogs = new AddToCollection('Raindogs', 'Tom Waits', 1985);
+console.log('Album Test / Indigos', indigos);
+let alice = new AddToCollection('Alice', 'Tom Waits', 2002);
+console.log('Album Test / Alice', alice);
+let nationalRansom = new AddToCollection('National Ransom', 'Elvis Costello', 2010);
+console.log('Album Test / National Ransom', nationalRansom);
+let fetchTheBoltCutters = new AddToCollection('Fetch the Bolt Cutters', 'Fiona Apple', 2020);
+console.log('Album Test / Fetch the Bolt Cutters', fetchTheBoltCutters);
+let stankonia = new AddToCollection('Stankonia', 'OutKast', 2000);
+console.log('Album Test / Stankonia', stankonia);
+let whenIWasCruel = new AddToCollection('When I was Cruel', 'Elvis Costello', 2002);
+console.log('Album Test / When I was Cruel', whenIWasCruel);
 
-// TESTED console.log(indigos);
 console.log('Current collection:', collection);
