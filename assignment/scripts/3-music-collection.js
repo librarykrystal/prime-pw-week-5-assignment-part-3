@@ -25,3 +25,13 @@ let whenIWasCruel = new AddToCollection('When I was Cruel', 'Elvis Costello', 20
 console.log('Album Test / When I was Cruel', whenIWasCruel);
 
 console.log('Current collection:', collection);
+
+
+function showCollection(collectionArray){
+    console.log(collectionArray.length);
+    for(eachAlbum of collectionArray){
+        console.log(eachAlbum.title, 'by', eachAlbum.artist, 'published in', eachAlbum.yearPublished);
+    }
+}
+
+showCollection(collection);
