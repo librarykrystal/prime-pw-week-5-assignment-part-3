@@ -13,7 +13,7 @@ function AddToCollection(title, artist, yearPublished){
 
 let indigos = new AddToCollection('Ellington Indigos', 'Duke Ellington', 1958);
 console.log('Album Test / Indigos', indigos);
-// Used first album as in-prog function writing tester before adding add'l albums
+// Used first album as in-prog function tester before adding add'l albums
 let alice = new AddToCollection('Alice', 'Tom Waits', 2002);
 console.log('Album Test / Alice', alice);
 let nationalRansom = new AddToCollection('National Ransom', 'Elvis Costello', 2010);
@@ -39,10 +39,10 @@ console.log('Calling the showCollection function:');
 showCollection(collection);
 
 
-function findByArtist(artist){
+function findByArtist(artistInquiry){
     let artistResults = [];
     for(eachArtist of collection){
-        if(eachArtist.artist == artist){
+        if(eachArtist.artist == artistInquiry){
             artistResults.push(eachArtist);
         }
     }
@@ -55,3 +55,4 @@ console.log('Search for OutKast:', findByArtist('OutKast'));
 console.log('Search for Elvis Costello:', findByArtist('Elvis Costello'));
 // Test for artist NOT in array:
 console.log('Search for artist not in collection:', findByArtist('Yanni'));
+
